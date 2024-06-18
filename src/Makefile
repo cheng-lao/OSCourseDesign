@@ -1,13 +1,12 @@
-CC = g++
+CC = gcc
 
-CFLAGS = -Wall -std=c++11
 
 TARGET = fibo
 
 all: $(TARGET)
 
-$(TARGET): fibo.cpp
-	$(CC) $(CFLAGS) -o $(TARGET) fibo.cpp
+$(TARGET): fibo.c
+	$(CC) -o $(TARGET) fibo.c
 
 clean:
 	rm -f $(TARGET)
