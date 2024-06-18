@@ -2,7 +2,7 @@ CC = g++
 
 CFLAGS = -Wall -std=c++11
 
-Target = fibo
+TARGET = fibo
 
 all: $(TARGET)
 
